@@ -1,14 +1,38 @@
 ---
-services: app-service\web, app-service
-platforms: python
-author: cephalin
+Serviço: Azure
+Plataforma: Python/Django
 ---
 
-# Avaliação continuada 7 de DevOps
+# DevOps - ADS 2B
 
-Desenvolvida com base na aplicação 
-[Python sample for Azure App Service - Django](https://github.com/Azure-Samples/app-service-web-python-get-started). 
+## Grupo
 
-## License
+<!DOCTYPE html>
+<html>
+<body>
 
-See [LICENSE](LICENSE).
+<h2>UNITEC - Universidade de Tecnologia</h2>
+<table>
+  <tr>
+    <td>Blenda Bomfim</td>
+    <td>1600971</td>
+  </tr>
+  <tr>
+    <td>Andre Tagino</td>
+    <td>1700167</td>
+  </tr>
+  <tr>
+    <td>Melissa Amélia </td>
+    <td>1700271</td>
+  </tr>
+  <tr>
+    <td>Carlos Henrique</td>
+    <td>1601176</td>
+  </tr>
+  <tr>
+    <td>Bruno Filidei</td>
+    <td>1600894</td>
+  </tr>
+</table>
+</body>
+</html>
