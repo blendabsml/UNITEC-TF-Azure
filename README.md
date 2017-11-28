@@ -5,8 +5,6 @@ Plataforma: Python/Django
 
 # DevOps - ADS 2B
 
-## Grupo
-
 <!DOCTYPE html>
 <html>
 <body>
