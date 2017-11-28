@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#007db7" />
+		<meta name="msapplication-navbutton-color" content="#007db7" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#007db7" />
+		<title>UNITEC | Bem Vindo</title>
+		{% load staticfiles %}
+		<link rel ="stylesheet" href="{% static 'css/estilo.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		
+	</head>
+<body>
+	<header>
+		<div class="menu">
+				<ul>
+					<nav>
+						<li><a href="/index"><img class="home" src="{% static 'images/Ti.png' %}"></a></li>
+						<li class="menusuperior"><a class="h4" href="/ListaCursos"><h4>Lista de Cursos</h4></a></li>
+						<li class="menusuperior"><a class="h4" href="/Noticias"><h4>Notícias</h4></a></li>
+						<li class="menusuperior"><a class="h4" href="/Contato"><h4>Contato</h4></a></li>
+						{% if not user.is_authenticated %}
+							<li class="menusuperior"><a class="h4" href="{% url 'restrito' %}"><h4>Restrito</h4></a></li>
+							<li class="menusuperior"><a class="h4" href="/entrar"><h4>Login</h4></a></li>
+						{% else %}
+							<li class="menusuperior"><a class="h4" href="{% url 'restrito' %}"><h4>Restrito</h4></a></li>
+							<li class="menusuperior"><a class="h4" href="/admin/logout"><h4>Logout</h4></a></li>
+						{% endif %}
+					</nav>
+				</ul>
+		</div>
+	</header>
+    <main>
+    {% block main %}
+
+    {% endblock main %}
+    </main>
+    <footer>
+        <p><strong>Universidade de Tecnologia - Todos os Direitos Reservados &copy; 2017</strong></p>
+    </footer>
+</body>
+</html>
+        

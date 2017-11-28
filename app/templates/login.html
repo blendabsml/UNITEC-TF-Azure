@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<head>
+		<link rel ="stylesheet" href="/static/css/contato.css"/>
+</head>
+<center><div class="Form1"><br>	
+<h2> Login </h2>     
+<form class="CampoLogin" method="POST">
+    {% csrf_token %}
+     {{ form.as_p }}
+ <input type="submit"  value"entrar"/>
+</form>
+<br/>
+<br/>
+<h2>ou caso seja coordenador acesse <a href="/admin">AQUI.</a></h2>
+</div></center>
+</div></center>
+
+{% endblock main %}

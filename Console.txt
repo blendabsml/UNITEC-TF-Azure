@@ -1,0 +1,5 @@
+https://unitec-impacta.scm.azurewebsites.net/DebugConsole
+
+1- You can login the Kudu Console site whose url is https://unitec-impacta.scm.azurewebsites.net/DebugConsole
+2- cd to d:\home\site\wwwroot which is the root directory of your application.
+3- run the command env\Scripts\python.exe manage.py migrate (assume your virtual environment is env in the root directory)

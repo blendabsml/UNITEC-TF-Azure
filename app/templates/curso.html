@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1> Curso </h1>
+
+ <form method="POST" action="">
+     {% csrf_token %}
+     {% for input in form %}
+     <div>
+         {{ input.label_tag }}                            
+         {{ input }}
+         {{input.erros}}
+     </div>
+     {% endfor %}
+     <br/>
+     <button type="submit">Enviar
+
+ </form>
+{% endblock main %}

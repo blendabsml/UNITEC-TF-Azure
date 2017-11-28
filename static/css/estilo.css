@@ -1,0 +1,588 @@
+body {
+	font: 1em/1.5 Verdana, Helvetica,sans-serif;
+	padding:0;
+	margin:0;
+	overflow: auto;
+	background-color: #fff;
+}
+
+
+.depoimentos{
+	background-color: #f3f3f3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.menu li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+	text-transform:uppercase;
+}
+
+.banner {
+	width: 100%;
+	padding-bottom:15px;
+}
+
+a.h4 {
+	color:inherit;					/* Relacionado a todas as páginas */
+}
+
+img.home {
+	width:90px;					/* Relacionado a todas as páginas */
+	height: 90px;
+	float: left;
+	margin-top: -14px;
+}
+
+div.formulario{
+    position: left;
+    top:60%;
+	padding-bottom: 50px;
+}
+
+.formulario2 {
+	width: 50%;
+	height: 50%;
+	padding: 20px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #d8dee2;
+    border-radius: 0 0 3px 3px;
+	box-shadow: -10px 10px 20px #888888;
+}
+
+
+.formularii2 {
+	width: 45%;
+}
+
+div.menu {
+	background-color: #000000;		/* Relacionado a todas as páginas */
+	height: 6em;
+	width: 100%;
+	margin: auto;
+	color: #f5f5f5;
+}
+
+
+footer {
+	padding:20px;
+	margin-top:20px;
+	color:#ffffff;
+	background-color:#e5474b;
+	text-align: center;
+	background: url('../images/bg.jpg');
+}
+
+ul.padding {
+	padding-left:369px;				/* Relacionado a página Homepage */
+}
+
+div.text {
+	text-align: justify;
+}
+
+div.sobre {
+	width: 80%;
+	padding-left: 88px;
+}
+
+div.sobre.depoimentos {
+	width: 80%;
+	padding-left: 88px;
+}
+
+h2{
+	color: #e5474b;
+	font-size: 1.75em;
+	font-family: 'Questrial', sans-serif;
+}
+
+h3{
+	font-family: 'Questrial', sans-serif;
+}
+
+h4{
+	color: gray;
+	font-family: 'Questrial', sans-serif;
+}
+
+p{
+    font-family: 'Questrial', sans-serif;
+    margin: 0px;
+}
+
+ul.corpo {
+	width: 85%;
+	text-align: justify;
+}
+
+.cursos {
+	width: 90%;
+}
+
+a.corlink {
+	color:inherit;					/* Relacionado a ListaCursos */
+}
+
+div.noticiatext {
+	width: 75%;
+	text-align: center;
+	float: center;
+	height: auto;
+}
+
+img.noticiasimage {
+	width: 100%;
+}
+
+
+/* Region flex-box */
+
+.flex-item {
+    width: 80%;
+    height: 350px;
+    margin: 10px;
+	overflow: auto;
+	text-align: justify;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+li.flex-item2 {
+	display: flex;
+    width: 80%;
+    margin: 10px;
+	overflow: auto;
+	text-align: justify;
+	padding-left:20%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+}
+
+li.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+}
+
+.wrapper {
+	display: flex;
+}
+.one {
+	padding-left: 91px;
+}
+.two {
+    padding-left: 91px;
+}
+.three {
+    padding-left: 91px;
+}
+.imagewr {
+	width: 100%;
+}
+
+/* Principais Cursos */
+.wrapper.principaisCursos {
+	display: flex;
+}
+.one.principaisCursos{
+	padding-left: 289px;
+}
+.two.principaisCursos{
+    padding-left: 289px;
+}
+
+.three.principaisCursos{
+    padding-left: 289px;
+}
+.imagewr.principaisCursos {
+	width: 35%;
+}
+/* end region */
+
+/*end region */
+
+.imgcurso {
+	width:100%;						/* Relacionado a página Homepage */
+	border-radius: 8px;
+}
+
+.direita {
+	width: 250px;
+	height: 100px;
+}
+
+/* Inicio do css de lista de cursos */
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.curso{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+hr {
+	width: 95%;
+	height: 10px;
+	border: 1px solid #222225;
+    box-shadow: 0 10px 10px -10px #000 inset;
+}
+
+.imagem{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.texto h1 {
+    font-size: 1em;
+    padding-left: 1em;
+    padding-left: 1em;
+
+}
+
+.texto a{ 
+    text-decoration-line: none;
+    color: #e5474b;
+    border: 1px solid #e5474b;
+    padding: 0.5em;
+}
+
+.texto a:hover {
+    text-decoration-line: none;
+    color: #222225;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.5em;
+    background-color: rgb(0, 0, 0);
+    transition: .9s ease;
+}
+
+.fa {
+    display: flex;
+    align-items: center;
+}
+
+.imagem img{
+    width: 80%;
+    min-width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+}
+#three{
+	padding: 6em 0 4em 0;
+}
+
+#three .inner{
+	display: flex;
+}
+
+section .inner{
+	max-width: 65em;
+	width: calc(100% - 6em);
+	margin: 0 auto;
+}
+
+#three .inner article{
+	width: 26%;
+	display: block;
+}
+
+#three .inner article.dois{
+	padding-left:130px;
+}
+
+
+#three .inner article.tres{
+	padding-left:130px;
+}
+
+
+#three .inner article h3{
+	color: #e5474b;
+	font-family: 'Questrial', sans-serif;
+}
+
+#three .inner article h5{
+	color: gray;
+	font-family: 'Questrial', sans-serif;
+}
+
+ul.actions{
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.actions li{
+	display: inline-block;
+	padding: 0 1em 0 0;
+	vertical-align: middle;	
+}
+
+input[type="submit"].alt, input[type="reset"].alt, input[type="button"].alt, button.alt, .button.alt {
+	background-color: transparent;
+    box-shadow: inset 0 0 0 2px #e5474b;
+    color: #e5474b !important;
+	font-family: 'Questrial', sans-serif;
+}
+
+.button:hover {
+    background-color: rgba(229, 71, 75, 0.15) !important; /* Green */
+    color: white;
+}
+
+#three .inner article .icon{
+	color: #b3b3b3;
+	font-size: 3em;
+}
+
+.Logout{
+	font-family: Arial;
+  	color: #ffffff;
+  	font-size: 20px;
+  	background: #e5474b;
+  	padding: 10px 20px 10px 20px;
+  	text-decoration: none;
+  	margin-right: 15px;
+  	margin-top: 12px;
+}
+
+.Logout:hover {
+	background: #e5474b;
+	text-decoration: none;
+}
+
+/* Fim do css de lista de cursos */
+
+.FotoAreaAluno{
+	width: 84px;
+}
+
+.InformacoesAluno{
+	float:right;
+}
+
+.Foto{
+	width: 84px;
+	transform: rotate(90deg);
+}
+
+.Informacoes{
+	background-color: #CDCDCD;
+	width: 660px;
+	float: right;
+}
+
+.FormContato {
+	width: 80%;
+	color: #52c8ff;
+	border: 4px solid #12668d;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+.CamposForm, select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d8dee2;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background-color: #d8dee2;
+	color: black;
+
+}
+ .buttonContato {
+	color: #fff;
+	background-color: #e5474b;
+	background-image: linear-gradient(-180deg, #E98E91 0%, #e5474b 90%);
+	border: 0px;
+	width: 80px;
+	height: 20px;
+}
+
+.grade {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-column-gap: 5%;
+	padding-left: 50px;
+}
+
+.gradeTitulo {
+	text-align: center;
+}
+
+.grade li {
+	list-style-type: none;
+	padding: 20px;
+	border: 1px solid #e5474b;
+}
+
+.grade1 {
+	background-color: #e5474b;
+	color: #fff
+}
+
+div.BarraAluno {
+	padding-top: 200px;
+}
+
+/* Inicio de Media Query */
+
+@media(max-width: 755px){
+  header,
+  header nav,
+  header nav li{
+    float:none;
+    width:100%;
+	line-height:0;
+	height: 50%;
+  }
+  
+  .banner {
+	display: none;
+  }
+
+  img.home {
+	float: center;
+	width: 150px;
+  }
+  li.menusuperior{
+	background-color: #636363;
+	color: white;
+	border: 1px solid black;
+	background: url('../images/bg.jpg');
+	height: 10%;
+	padding-left: 0px;
+
+  }
+
+  div.sobre {
+	width: 70%;
+	padding-top: 150px;
+	padding-left: 30px;
+  }
+
+  div.imagem {
+	width: 70%;
+  }
+
+  .cursos {
+	width: 100%;
+  }
+
+  .Fundo {
+	padding-top: 200px;
+	background-color: #fff;
+  }
+
+  .fundo2 {
+	background-color:white;
+	width:93%;
+	padding-top: 50px;
+  }
+
+  .flex-item {
+	width: 80%;
+  }
+  li.flex-item2 {
+	width:100%;
+	padding-left:0px;
+  }
+
+  .fundo3 {
+	width: 95%;
+  }
+  .formularii2 {
+	width: 50%;
+  }
+
+  a.h4 {
+	color:inherit;
+	height: 3px;
+	padding-top: 0px;
+	font-family: 'Questrial', sans-serif;
+  }
+
+  .formularii {
+	padding-top: 230px;
+  }
+  p{
+    margin: 0px;
+    padding-left: 0em;
+	padding-right: 0em;
+  }
+  .curso{
+    padding-top: 80px;
+  }
+
+  div.sobre.depoimentos {
+	width: 100%;
+	padding-left: 0px;
+	padding-top: 200px;
+  }
+
+  .conteudo{
+    padding-top: 200px;
+  }
+
+  #three .inner article.dois{
+	padding-left:50px;
+  }
+
+  #three .inner article.tres{
+	padding-left:50px;
+  }
+
+  .one {
+	padding-left: 15px;
+  }
+
+  .two {
+    padding-left: 20px;
+  }
+  .gradeTitulo {
+	padding-top: 250px;
+  }
+}
+/* Fim de Media Query */
+
+.side_bar {
+    float: left;
+    width: 17%;
+    height: 491px;
+
+    background-color: black;
+}

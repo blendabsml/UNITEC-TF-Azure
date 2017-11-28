@@ -1,0 +1,79 @@
+
+{% extends 'base.html' %}
+{% block main %}
+<head>
+    <link rel ="stylesheet" href="/static/css/contato.css"/>
+</head>
+
+<section>
+	<div class="Informacoes">
+	<ul class="BarraAluno">
+	{% if not user.is_authenticated %}
+		<li class="InformacoesAluno"><button class="Logout" onclick="window.location.href='/entrar'">Entrar</button></li>
+	{% else %}
+		<li class="InformacoesAluno"><button class="Logout" onclick="window.location.href='/sair'">Sair</button></li>
+	{% endif %}
+	<li class="InformacoesAluno"><a>Curso: {{ user.curso }}</a></li>
+	<li class="InformacoesAluno"><a>RA: {{ user.ra }}</a></li>
+	<li class="InformacoesAluno"><a>Olá, {{ user }}!</a></li>
+	<li class="InformacoesAluno">
+			{% if uploaded_file_url %}
+				<img class="Foto" src="{{ uploaded_file_url }}">
+			{% else %}
+				<img class="FotoAreaAluno" src="/static/images/aluno.png">
+		   {% endif %}
+	</li>
+	</ul>
+	</div>
+	</section>
+	<DIV class="side_bar">
+        <ul>
+            <li><a href="/AreaAluno">Área do Aluno</a></li>
+            <li><a href="/boletim">Boletim</a></li>
+            <li><a href=/smartclass>Smart Class</a></li>
+            <li><a href="/entregas">Entregas</a></li>
+
+            <li><a href="/index">Voltar</a></li>
+        </ul>
+    </DIV>
+	<section class="depoimentos">
+		<div class="sobre depoimentos">
+		<br>
+		<br>
+		<br>
+		<h2>Avisos</h2>
+		<div class="wrapper">
+			<div class="one"><p><img class="imagewr" src="/static/images/Aviso1.png"></p></div>
+			<div class="two"><p><img class="imagewr" src="/static/images/Aviso2.png"></p></div>
+		  </div>
+		<br>
+		<br>
+		<br>
+		</div>
+	</section>
+	<br>
+	<br>
+		<center><div class="Form1"><br>	
+		<h2>Enviar email para o professor.</h2>   
+		<form class="CampoLogin" method="POST">
+			{% csrf_token %}
+			 {{ form.as_p }}
+		<br/>
+		 <input type="submit" value"Enviar"/>
+		</form>
+		<br/>
+		</div></center>
+	<br>
+	<br>
+	<h2>Upload de Arquivo</h2>
+	<br>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input type="file" name="myfile">
+		<button type="submit">Upload</button>
+	  </form>
+	<br>
+	<br>
+	<br>
+
+{% endblock main %}
